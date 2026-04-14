@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Real Estate Holdings LLC - Version 2.0</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            background-color: #1f2937;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky top-0 z-50 bg-opacity-50 backdrop-blur-lg">
+        <nav class="container mx-auto flex justify-between items-center py-4">
+            <div class="text-xl font-bold">United Real Estate</div>
+            <div class="space-x-4">
+                <a href="#" class="text-white">Home</a>
+                <a href="#" class="text-white">About</a>
+                <a href="#" class="text-white">Services</a>
+                <a href="#" class="text-white">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="flex items-center justify-center h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/random/800x600/?business');">
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-5xl font-bold">Discover Your Freedom</h1>
+                <p class="mt-4 text-lg">Professional real estate services like never before</p>
+                <a href="#" class="mt-6 inline-block px-8 py-3 bg-blue-600 text-white hover:bg-blue-700 rounded-lg">Get Started</a>
+            </div>
+        </section>
+        <section id="services" class="py-20 container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up">
+                <div class="glass p-6 text-center">
+                    <i class="fas fa-home fa-3x mb-4"></i>
+                    <h2 class="text-2xl font-bold">Buy a Home</h2>
+                    <p class="mt-2">Explore properties that match your style and budget.</p>
+                </div>
+                <div class="glass p-6 text-center" data-aos-delay="200">
+                    <i class="fas fa-sign fa-3x mb-4"></i>
+                    <h2 class="text-2xl font-bold">Sell Your Home</h2>
+                    <p class="mt-2">Get the highest value for your property with our expert assistance.</p>
+                </div>
+                <div class="glass p-6 text-center" data-aos-delay="400">
+                    <i class="fas fa-building fa-3x mb-4"></i>
+                    <h2 class="text-2xl font-bold">Rent a Property</h2>
+                    <p class="mt-2">Find the perfect rental that fits your needs.</p>
+                </div>
+            </div>
+        </section>
+        <section id="trust" class="py-20 bg-gray-800 text-center">
+            <h2 class="text-3xl font-bold" data-aos="fade-up">Trusted by Leaders</h2>
+            <div class="flex justify-center mt-8 space-x-8" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-500px fa-2x"></i>
+                <i class="fab fa-accusoft fa-2x"></i>
+                <i class="fab fa-acquisitions-incorporated fa-2x"></i>
+            </div>
+        </section>
+    </main>
+    <footer class="py-10 bg-gray-900 text-center">
+        <div class="container mx-auto">
+            <p class="text-sm">© 2023 United Real Estate Holdings LLC. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
