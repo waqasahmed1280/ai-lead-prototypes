@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYREJ</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+    <nav class="sticky top-0 z-10 bg-gray-100 bg-opacity-50 backdrop-filter backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-[#0a2239]">NYREJ</h1>
+            <ul class="flex items-center space-x-4">
+                <li><a href="#" class="text-[#0a2239] hover:text-[#f44336]" data-section="home">Home</a></li>
+                <li><a href="#" class="text-[#0a2239] hover:text-[#f44336]" data-section="about">About</a></li>
+                <li><a href="#" class="text-[#0a2239] hover:text-[#f44336]" data-section="services">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home" class="block">
+        <div class="h-screen bg-cover bg-center" style="background-image: url('https://picsum.photos/1920/1080?random=1')">
+            <div class="container mx-auto px-4 py-32 text-center text-white">
+                <h1 class="text-5xl font-bold" data-aos="fade-up">Welcome to NYREJ</h1>
+                <p class="text-2xl mt-4" data-aos="fade-up">Your trusted partner in the world of real estate</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="hidden">
+        <div class="container mx-auto px-4 py-20 text-[#6d737b]">
+            <h1 class="text-4xl font-bold text-[#0a2239]" data-aos="fade-up">About Us</h1>
+            <p class="text-2xl mt-4" data-aos="fade-up">At NYREJ, we pride ourselves on being the most trusted and respected name in the real estate industry. With years of experience and a team of experts, we are dedicated to providing our clients with the best possible service and results.</p>
+            <p class="text-2xl mt-4" data-aos="fade-up">Our mission is to provide our clients with the most up-to-date and accurate information, so they can make informed decisions about their real estate needs. We are committed to building long-term relationships with our clients, and we strive to exceed their expectations in every way possible.</p>
+            <p class="text-2xl mt-4" data-aos="fade-up">Whether you are buying, selling, or renting, we are here to guide you every step of the way. Our team of experts is dedicated to providing you with the best possible service, and we are committed to making your real estate experience as smooth and stress-free as possible.</p>
+        </div>
+    </section>
+    <section id="services" class="hidden">
+        <div class="container mx-auto px-4 py-20 text-[#6d737b]">
+            <h1 class="text-4xl font-bold text-[#0a2239]" data-aos="fade-up">Our Services</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <div class="bg-white shadow-sm rounded-lg p-4" data-aos="fade-up">
+                    <h2 class="text-2xl font-bold text-[#0a2239]">Real Estate News</h2>
+                    <img src="https://picsum.photos/600/400?random=2" alt="Real Estate News" class="w-full h-48 object-cover mt-4">
+                    <p class="text-2xl mt-4">Stay up-to-date with the latest news and trends in the real estate industry</p>
+                </div>
+                <div class="bg-white shadow-sm rounded-lg p-4" data-aos="fade-up">
+                    <h2 class="text-2xl font-bold text-[#0a2239]">Brokerage Services</h2>
+                    <img src="https://picsum.photos/600/400?random=2" alt="Brokerage Services" class="w-full h-48 object-cover mt-4">
+                    <p class="text-2xl mt-4">Our team of expert brokers will guide you through the entire process of buying or selling a property</p>
+                </div>
+                <div class="bg-white shadow-sm rounded-lg p-4" data-aos="fade-up">
+                    <h2 class="text-2xl font-bold text-[#0a2239]">Finance Consulting</h2>
+                    <img src="https://picsum.photos/600/400?random=2" alt="Finance Consulting" class="w-full h-48 object-cover mt-4">
+                    <p class="text-2xl mt-4">Our finance consulting services will help you make informed decisions about your real estate investments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const navbarLinks = document.querySelectorAll('nav ul li a');
+        const sections = document.querySelectorAll('section');
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const sectionId = link.getAttribute('data-section');
+                sections.forEach(section => {
+                    section.classList.add('hidden');
+                });
+                document.getElementById(sectionId).classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
