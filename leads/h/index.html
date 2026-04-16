@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYREJ | The Pinnacle of Real Estate Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0a2239',
+                            red: '#f44336',
+                            gray: '#6d737b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #020617; color: #f8fafc; overflow-x: hidden; }
+        .glass { background: rgba(10, 34, 57, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-gradient { background: linear-gradient(to bottom, rgba(2, 6, 23, 0.4), rgba(2, 6, 23, 1)), url('https://loremflickr.com/1920/1080/luxury,architecture,city?random=1'); background-size: cover; background-position: center; }
+        .service-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .service-card:hover { background: rgba(255, 255, 255, 0.07); transform: translateY(-10px); border-color: #f44336; box-shadow: 0 20px 40px rgba(244, 67, 54, 0.15); }
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #f44336; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .active-section { display: block !important; animation: fadeIn 0.8s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-brand-red rounded flex items-center justify-center">
+                        <i class="fas fa-city text-white text-xl"></i>
+                    </div>
+                    <span class="text-3xl font-extrabold tracking-tighter text-white">NYRE<span class="text-brand-red">J</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-12 items-center">
+                    <a href="#home" class="nav-link text-sm font-semibold uppercase tracking-widest text-gray-300 hover:text-white transition-colors">Home</a>
+                    <a href="#about" class="nav-link text-sm font-semibold uppercase tracking-widest text-gray-300 hover:text-white transition-colors">About</a>
+                    <a href="#services" class="nav-link text-sm font-semibold uppercase tracking-widest text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="#contact" class="nav-link text-sm font-semibold uppercase tracking-widest text-gray-300 hover:text-white transition-colors">Contact</a>
+                    <button class="bg-brand-red hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg shadow-red-500/20 active:scale-95">
+                        Client Portal
+                    </button>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white text-2xl focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN SPA CONTENT -->
+    <main class="pt-24">
+        
+        <!-- HOME SECTION -->
+        <section id="home" class="min-h-screen flex items-center relative overflow-hidden active-section">
+            <div class="absolute inset-0 hero-gradient z-0"></div>
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+                <div class="max-w-4xl" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8">
+                        <span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
+                        <span class="text-xs font-bold uppercase tracking-widest text-gray-200">The New York Real Estate Journal 2024</span>
+                    </div>
+                    <h1 class="text-7xl lg:text-8xl font-black text-white leading-none mb-8 font-serif italic">
+                        Mastering The <br>
+                        <span class="text-brand-red not-italic font-sans">Art of Real Estate.</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 leading-relaxed mb-12 max-w-2xl">
+                        NYREJ is the global authority on high-stakes real estate transitions and market intelligence. 
+                        We combine centuries of localized expertise with cutting-edge analytical tools to deliver unparalleled brokerage and consulting services. 
+                        Our mission is to empower institutional investors and private developers with the insights needed to conquer the world's most competitive markets. 
+                        Experience a new standard of property excellence where data meets human intuition.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <a href="#services" class="bg-white text-brand-navy hover:bg-brand-red hover:text-white px-10 py-5 rounded-xl font-bold text-lg transition-all text-center shadow-xl">
+                            Explore Our Services
+                        </a>
+                        <a href="#about" class="border border-white/20 bg-white/5 hover:bg-white/10 backdrop-blur-md px-10 py-5 rounded-xl font-bold text-lg transition-all text-center">
+                            Learn Our Legacy
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce hidden lg:block">
+                <i class="fas fa-chevron-down text-gray-500 text-2xl"></i>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="bg-slate-950 hidden min-h-screen items-center">
+            <div class="max-w-7xl mx-auto px-6 py-32 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                    <div data-aos="fade-up">
+                        <h2 class="text-brand-red font-bold uppercase tracking-widest mb-4">Our Heritage</h2>
+                        <h3 class="text-5xl font-extrabold text-white mb-8 leading-tight">Defining the New York <br>Skyline Since 1989.</h3>
+                        <div class="space-y-6">
+                            <p class="text-lg text-gray-400 leading-relaxed">
+                                For over three decades, NYREJ has served as the bedrock of real estate information for the most prestigious firms in New York. We began with a single vision: to bridge the gap between speculative investment and proven market fundamentals. Our evolution from a local trade publication to a global powerhouse is a testament to our commitment to accuracy and strategic growth.
+                            </p>
+                            <p class="text-lg text-gray-400 leading-relaxed">
+                                Our team comprises senior analysts, forensic accountants, and veteran brokers who have navigated every market cycle since the late eighties. We don't just report on the market; we actively shape it through strategic advocacy and innovative financial modeling. By maintaining a strict focus on data integrity, we have earned the trust of the city's most influential landlords and developers.
+                            </p>
+                            <p class="text-lg text-gray-400 leading-relaxed">
+                                Innovation is at the core of everything we do at NYREJ. We utilize proprietary AI-driven forecasting models to predict neighborhood shifts before they manifest in the public record. This forward-thinking approach allows our clients to secure assets at optimal price points while mitigating long-term risk factors.
+                            </p>
+                            <p class="text-lg text-gray-400 leading-relaxed">
+                                At the heart of our success is a deep-seated belief in the power of professional networking and shared knowledge. We foster a collaborative environment where industry leaders can connect, share insights, and build the future of our urban landscapes together. NYREJ is more than a company—it is the pulse of the real estate industry.
+                            </p>
+                        </div>
+                        <div class="mt-12 grid grid-cols-3 gap-8 border-t border-white/10 pt-12">
+                            <div>
+                                <p class="text-4xl font-bold text-white mb-1">$40B+</p>
+                                <p class="text-sm text-gray-500 uppercase tracking-widest font-semibold">Transactions</p>
+                            </div>
+                            <div>
+                                <p class="text-4xl font-bold text-white mb-1">35yrs</p>
+                                <p class="text-sm text-gray-500 uppercase tracking-widest font-semibold">Excellence</p>
+                            </div>
+                            <div>
+                                <p class="text-4xl font-bold text-white mb-1">500+</p>
+                                <p class="text-sm text-gray-500 uppercase tracking-widest font-semibold">Global Partners</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="zoom-in">
+                        <div class="absolute -inset-4 bg-brand-red/20 rounded-3xl blur-3xl"></div>
+                        <img src="https://loremflickr.com/800/800/office,business?random=2" alt="Corporate Headquarters" class="relative rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 object-cover w-full h-[600px] border border-white/10">
+                        <div class="absolute -bottom-10 -left-10 bg-brand-navy p-8 rounded-2xl border border-white/10 hidden lg:block">
+                            <i class="fas fa-quote-left text-brand-red text-4xl mb-4"></i>
+                            <p class="text-lg italic text-gray-300">"The absolute gold standard in property insight."</p>
+                            <p class="mt-4 font-bold">- WSJ Real Estate Section</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="bg-gray-950 hidden min-h-screen">
+            <div class="max-w-7xl mx-auto px-6 py-32 lg:px-8">
+                <div class="text-center mb-24" data-aos="fade-down">
+                    <h2 class="text-brand-red font-bold uppercase tracking-widest mb-4">Our Ecosystem</h2>
+                    <h3 class="text-5xl lg:text-6xl font-black text-white mb-6">Unrivaled Expertise.</h3>
+                    <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                        We provide a comprehensive suite of elite services designed to cover every vertical within the real estate lifecycle, from initial news to final financing.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Service 1 -->
+                    <div class="service-card rounded-2xl p-10 flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-brand-red/10 rounded-xl flex items-center justify-center mb-8 border border-brand-red/20">
+                            <i class="fas fa-newspaper text-brand-red text-3xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-6">Real Estate News</h4>
+                        <p class="text-gray-400 leading-relaxed mb-8 flex-grow">
+                            Information is the ultimate currency in real estate development. Our news division provides real-time alerts on zoning changes, legislative updates, and high-profile acquisitions that shape the market. We employ a dedicated team of journalists and analysts who dig deeper than the surface headlines to find the "why" behind every deal. Stay ahead of your competitors with exclusive interviews from the industry's most reclusive and successful titans.
+                        </p>
+                        <ul class="space-y-4 mb-10 text-gray-300">
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-brand-red"></i> Daily Market Briefs</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-brand-red"></i> Investigative Reports</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-brand-red"></i> Exclusive Interviews</li>
+                        </ul>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=3" alt="News Service" class="rounded-xl mb-8 w-full h-48 object-cover">
+                        <button class="w-full py-4 rounded-xl border border-white/10 hover:bg-brand-red hover:border-brand-red transition-all font-bold">Access Journal</button>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card rounded-2xl p-10 flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-blue-500/10 rounded-xl flex items-center justify-center mb-8 border border-blue-500/20">
+                            <i class="fas fa-handshake text-blue-500 text-3xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-6">Brokerage Services</h4>
+                        <p class="text-gray-400 leading-relaxed mb-8 flex-grow">
+                            Our brokerage team operates at the intersection of luxury residential and high-capacity commercial assets. We utilize a global database of high-net-worth individuals and institutional funds to facilitate transactions that often never hit the public market. Every listing is treated as a masterpiece, requiring bespoke marketing strategies and surgical negotiation tactics. We don't just sell property; we represent your long-term legacy and financial growth objectives with total discretion.
+                        </p>
+                        <ul class="space-y-4 mb-10 text-gray-300">
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-blue-500"></i> Asset Disposition</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-blue-500"></i> Tenant Representation</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-blue-500"></i> Off-Market Inventory</li>
+                        </ul>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=4" alt="Brokerage" class="rounded-xl mb-8 w-full h-48 object-cover">
+                        <button class="w-full py-4 rounded-xl border border-white/10 hover:bg-blue-600 hover:border-blue-600 transition-all font-bold">Speak with a Broker</button>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card rounded-2xl p-10 flex flex-col h-full" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-8 border border-emerald-500/20">
+                            <i class="fas fa-chart-line text-emerald-500 text-3xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-6">Finance Consulting</h4>
+                        <p class="text-gray-400 leading-relaxed mb-8 flex-grow">
+                            Complex real estate ventures require sophisticated capital stacks. Our finance consulting division specializes in debt restructuring, equity placement, and creative bridge financing for projects of all sizes. We analyze the fiscal health of your portfolio and identify untapped opportunities for liquidity and leverage. With decades of banking relationships, we navigate the labyrinth of modern lending to ensure your vision remains funded and your ROI remains protected.
+                        </p>
+                        <ul class="space-y-4 mb-10 text-gray-300">
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Capital Advisory</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Risk Assessment</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Portfolio Optimization</li>
+                        </ul>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=5" alt="Finance" class="rounded-xl mb-8 w-full h-48 object-cover">
+                        <button class="w-full py-4 rounded-xl border border-white/10 hover:bg-emerald-600 hover:border-emerald-600 transition-all font-bold">Request Consultation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="bg-slate-900 hidden min-h-screen">
+            <div class="max-w-7xl mx-auto px-6 py-32 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+                    <div data-aos="fade-right">
+                        <h2 class="text-brand-red font-bold uppercase tracking-widest mb-4">Get In Touch</h2>
+                        <h3 class="text-5xl font-extrabold text-white mb-8">Let's Discuss Your Next Acquisition.</h3>
+                        <p class="text-lg text-gray-400 mb-12">
+                            Whether you're looking to list a landmark property or seeking a strategic investment partner, our team is ready to provide the intelligence you need. We respond to all inquiries with the highest level of professionalism and confidentiality. Join the inner circle of New York real estate today.
+                        </p>
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-6">
+                                <div class="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-location-dot text-brand-red"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white font-bold text-lg">World Headquarters</p>
+                                    <p class="text-gray-400">1221 Avenue of the Americas, New York, NY 10020</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6">
+                                <div class="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-brand-red"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white font-bold text-lg">Direct Line</p>
+                                    <p class="text-gray-400">+1 (212) 555-NYREJ</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6">
+                                <div class="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-brand-red"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white font-bold text-lg">Email Inquiry</p>
+                                    <p class="text-gray-400">partnerships@nyrej.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/5 border border-white/10 p-10 rounded-3xl backdrop-blur-xl" data-aos="fade-left">
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">First Name</label>
+                                    <input type="text" placeholder="John" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:outline-none focus:border-brand-red transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Last Name</label>
+                                    <input type="text" placeholder="Doe" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:outline-none focus:border-brand-red transition-all">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Email Address</label>
+                                <input type="email" placeholder="john.doe@firm.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:outline-none focus:border-brand-red transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Service Interest</label>
+                                <select class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:outline-none focus:border-brand-red transition-all appearance-none">
+                                    <option>Real Estate News Subscription</option>
+                                    <option>Brokerage Services</option>
+                                    <option>Finance Consulting</option>
+                                    <option>Other / Press Inquiry</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Your Message</label>
+                                <textarea rows="4" placeholder="How can our experts assist you?" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:outline-none focus:border-brand-red transition-all"></textarea>
+                            </div>
+                            <button class="w-full bg-brand-red hover:bg-red-700 py-5 rounded-xl font-black text-lg shadow-lg shadow-red-500/20 transition-all uppercase tracking-widest">
+                                Submit Confidential Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-20 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-8">
+                        <div class="w-8 h-8 bg-brand-red rounded flex items-center justify-center">
+                            <i class="fas fa-city text-white text-sm"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold tracking-tighter text-white">NYRE<span class="text-brand-red">J</span></span>
+                    </div>
+                    <p class="text-gray-500 leading-relaxed">
+                        The definitive resource for commercial real estate insight, data, and institutional brokerage. Established in 1989.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold uppercase tracking-widest mb-8">Quick Links</h5>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="#home" class="hover:text-brand-red transition-colors">Home Page</a></li>
+                        <li><a href="#about" class="hover:text-brand-red transition-colors">Our Legacy</a></li>
+                        <li><a href="#services" class="hover:text-brand-red transition-colors">Global Services</a></li>
+                        <li><a href="#contact" class="hover:text-brand-red transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold uppercase tracking-widest mb-8">Services</h5>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Market Research</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Asset Management</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Zoning Analysis</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold uppercase tracking-widest mb-8">Subscribe</h5>
+                    <p class="text-gray-500 mb-6 text-sm">Get the weekly intelligence report delivered directly to your inbox.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Email Address" class="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text
