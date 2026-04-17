@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Realty | Elite Real Estate Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(2, 6, 23, 1) 100%);
+        }
+        .nav-link-active {
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-gray-950/80 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-white flex items-center justify-center rounded-lg">
+                    <i class="fas fa-city text-gray-950 text-xl"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tighter uppercase">United <span class="font-light text-gray-400">Realty</span></span>
+            </div>
+            
+            <div class="hidden md:flex space-x-12 text-sm font-medium tracking-widest uppercase">
+                <a href="#home" class="nav-item hover:text-white transition-colors duration-300 text-gray-400">Home</a>
+                <a href="#about" class="nav-item hover:text-white transition-colors duration-300 text-gray-400">About</a>
+                <a href="#services" class="nav-item hover:text-white transition-colors duration-300 text-gray-400">Services</a>
+                <a href="#contact" class="nav-item hover:text-white transition-colors duration-300 text-gray-400">Contact</a>
+            </div>
+
+            <button class="hidden md:block px-8 py-3 bg-white text-gray-950 font-bold text-xs tracking-widest uppercase hover:bg-gray-200 transition-all active:scale-95">
+                Inquire Now
+            </button>
+        </div>
+    </nav>
+
+    <main id="spa-content">
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen relative flex items-center transition-all duration-700">
+            <div class="absolute inset-0 z-0">
+                <img src="https://loremflickr.com/1920/1080/luxury,architecture,city?random=1" class="w-full h-full object-cover" alt="Luxury Architecture">
+                <div class="absolute inset-0 hero-overlay"></div>
+            </div>
+            
+            <div class="max-w-7xl mx-auto px-4 relative z-10 w-full">
+                <div class="max-w-4xl" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="inline-block px-4 py-1 border border-white/20 rounded-full text-xs font-semibold tracking-widest uppercase mb-6 bg-white/5">Excellence in Real Estate</span>
+                    <h1 class="text-6xl md:text-8xl font-extrabold leading-tight mb-8 text-gradient font-display">
+                        The Pinnacle of <br>Modern Living.
+                    </h1>
+                    <p class="text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl">
+                        United Realty represents the gold standard in premium property acquisition and management. 
+                        We curate exclusive portfolios for discerning clients who demand more than just a residence; 
+                        they demand a lifestyle defined by sophistication, privacy, and architectural brilliance. 
+                        Our global network ensures that your next investment is not just a transaction, but a legacy.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <a href="#services" class="px-10 py-5 bg-white text-gray-950 font-bold text-sm tracking-widest uppercase hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all text-center">
+                            Explore Services
+                        </a>
+                        <a href="#about" class="px-10 py-5 border border-white/20 hover:bg-white/10 transition-all text-sm font-bold tracking-widest uppercase text-center">
+                            Our Story
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="hidden min-h-screen bg-gray-950">
+            <div class="max-w-7xl mx-auto px-4 py-32">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                    <div data-aos="fade-up">
+                        <h2 class="text-5xl font-extrabold mb-8 font-display">Decades of Unrivaled Expertise.</h2>
+                        <div class="space-y-6 text-gray-400 text-lg leading-relaxed">
+                            <p>
+                                Founded on the principles of integrity and absolute discretion, United Realty has evolved from a boutique agency into a powerhouse of the luxury real estate sector. We believe that every property tells a unique story, and our mission is to match that story with the perfect custodian. Our team of veteran advisors possesses deep market insights that go beyond traditional data points.
+                            </p>
+                            <p>
+                                We prioritize relationship-driven service, ensuring that our clients receive personalized attention at every stage of their journey. Whether you are seeking a penthouse in a metropolitan hub or a secluded estate in the countryside, our methodology remains the same: meticulous research, aggressive negotiation, and seamless execution.
+                            </p>
+                            <p>
+                                At United Realty, we don't just sell square footage; we sell the future. Our commitment to sustainable luxury and smart-home integration places us at the forefront of the industry's evolution. We bridge the gap between historic charm and contemporary convenience, creating value that lasts for generations to come.
+                            </p>
+                            <p>
+                                Join a community of high-net-worth individuals who trust us with their most valuable assets. Experience the peace of mind that comes from working with a firm that values your privacy as much as your investment. United Realty is more than a name; it is a seal of quality in the global property market.
+                            </p>
+                        </div>
+                        <div class="mt-12 flex items-center space-x-8">
+                            <div>
+                                <p class="text-4xl font-bold text-white">25+</p>
+                                <p class="text-xs uppercase tracking-widest text-gray-500">Years Experience</p>
+                            </div>
+                            <div class="w-px h-12 bg-white/10"></div>
+                            <div>
+                                <p class="text-4xl font-bold text-white">4.8B</p>
+                                <p class="text-xs uppercase tracking-widest text-gray-500">Assets Managed</p>
+                            </div>
+                            <div class="w-px h-12 bg-white/10"></div>
+                            <div>
+                                <p class="text-4xl font-bold text-white">12</p>
+                                <p class="text-xs uppercase tracking-widest text-gray-500">Global Offices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="zoom-in">
+                        <div class="absolute -top-10 -right-10 w-64 h-64 bg-blue-900/20 rounded-full blur-3xl"></div>
+                        <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-slate-800/30 rounded-full blur-3xl"></div>
+                        <img src="https://loremflickr.com/800/1000/office,business?random=2" class="relative z-10 rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 object-cover w-full h-[600px]" alt="Executive Office">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="hidden min-h-screen bg-slate-900">
+            <div class="max-w-7xl mx-auto px-4 py-32">
+                <div class="text-center mb-20">
+                    <h2 class="text-5xl font-extrabold mb-6 font-display" data-aos="fade-up">Exceptional Offerings</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto text-lg" data-aos="fade-up" data-aos-delay="100">
+                        Our suite of services is designed to cover every facet of the real estate lifecycle, 
+                        providing a comprehensive ecosystem for property owners and seekers alike.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="glass p-10 rounded-3xl hover:-translate-y-4 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white group-hover:text-gray-950 transition-colors">
+                            <i class="fas fa-key text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Residential Sales</h3>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Acquiring a luxury home requires a nuanced understanding of market timing and architectural value. Our acquisition specialists leverage off-market listings and private networks to find gems that never reach the public eye. We handle every detail, from initial viewing to the final signature, ensuring a seamless transfer of ownership for your next primary residence or vacation home.
+                        </p>
+                        <img src="https://loremflickr.com/600/400/mansion,modern?random=10" class="rounded-xl w-full h-48 object-cover mb-6 opacity-60 group-hover:opacity-100 transition-opacity" alt="Luxury Mansion">
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i> Exclusive Off-Market Portfolio</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i> Strategic Negotiation Experts</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i> Concierge Closing Services</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="glass p-10 rounded-3xl hover:-translate-y-4 transition-all duration-500 group border-white/20 bg-white/5" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white group-hover:text-gray-950 transition-colors">
+                            <i class="fas fa-building text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Premium Rentals</h3>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            For those who seek flexibility without compromising on grandeur, our rental division offers short-term and long-term stays in the world's most desirable locations. Each property in our rental fleet undergoes a rigorous 500-point inspection to ensure it meets our exacting standards for luxury. From high-rise penthouses to coastal villas, we provide temporary housing that feels permanent.
+                        </p>
+                        <img src="https://loremflickr.com/600/400/apartment,interior?random=11" class="rounded-xl w-full h-48 object-cover mb-6 opacity-60 group-hover:opacity-100 transition-opacity" alt="Luxury Apartment">
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i> 24/7 Lifestyle Concierge</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i> Fully Serviced Residences</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i> Flexible Lease Structures</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="glass p-10 rounded-3xl hover:-translate-y-4 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white group-hover:text-gray-950 transition-colors">
+                            <i class="fas fa-chart-line text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Property Management</h3>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Protecting your investment requires a proactive and professional approach to maintenance and tenant relations. Our management team handles everything from financial reporting and tax compliance to emergency repairs and landscape architecture. We treat every property as if it were our own, maximizing yield while minimizing the stress of ownership for our international clients.
+                        </p>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=12" class="rounded-xl w-full h-48 object-cover mb-6 opacity-60 group-hover:opacity-100 transition-opacity" alt="Skyscraper">
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i> Real-time Financial Portals</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i> Asset Appreciation Strategies</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i> Vetted Tenant Placement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="hidden min-h-screen bg-gray-950">
+            <div class="max-w-7xl mx-auto px-4 py-32">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+                    <div data-aos="fade-right">
+                        <h2 class="text-5xl font-extrabold mb-8 font-display">Begin Your Journey.</h2>
+                        <p class="text-gray-400 text-lg mb-12">
+                            Ready to take the next step in your real estate endeavors? Our team of elite advisors is standing by to provide a private consultation. Whether you are looking to buy, sell, or manage a high-value asset, United Realty offers the expertise and discretion you require. Reach out today to experience the future of luxury property management.
+                        </p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-12 h-12 bg-white/5 flex items-center justify-center rounded-full text-white">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl">Global Headquarters</h4>
+                                    <p class="text-gray-500">721 Fifth Avenue, New York, NY 10022</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-6">
+                                <div class="w-12 h-12 bg-white/5 flex items-center justify-center rounded-full text-white">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl">Direct Line</h4>
+                                    <p class="text-gray-500">+1 (800) 555-REALTY</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-6">
+                                <div class="w-12 h-12 bg-white/5 flex items-center justify-center rounded-full text-white">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl">Email Inquiries</h4>
+                                    <p class="text-gray-500">private@unitedrealty.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass p-12 rounded-3xl" data-aos="fade-left">
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">First Name</label>
+                                    <input type="text" class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-white transition-colors" placeholder="John">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Last Name</label>
+                                    <input type="text" class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-white transition-colors" placeholder="Doe">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Email Address</label>
+                                <input type="email" class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-white transition-colors" placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Service Required</label>
+                                <select class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-white transition-colors appearance-none">
+                                    <option class="bg-gray-900">Buying Property</option>
+                                    <option class="bg-gray-900">Renting Luxury</option>
+                                    <option class="bg-gray-900">Property Management</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Your Message</label>
+                                <textarea rows="4" class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-white transition-colors" placeholder="Tell us about your requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-5 bg-white text-gray-950 font-bold tracking-widest uppercase hover:bg-gray-200 transition-all active:scale-95 rounded-xl">
+                                Send Private Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black border-t border-white/10 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-white flex items-center justify-center rounded-md">
+                        <i class="fas fa-city text-gray-950 text-sm"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tighter uppercase">United <span class="font-light text-gray-400">Realty</span></span>
+                </div>
+                
+                <div class="flex space-x-8 text-xs font-bold tracking-widest uppercase text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Licensing</a>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors text-xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors text-xl"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-gray-600 text-sm">
+                &copy; 2023 United Realty Global. All rights reserved. 
+                Designed for the Elite.
+            </div>
+        </div>
+    </footer>
+
+    <!-- SPA Logic Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
+
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-item');
+
+            function navigate(hash) {
+                const targetId = hash.replace('#', '') || 'home';
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    // Hide all sections
+                    sections.forEach(section => {
+                        section.classList.add('hidden');
+                    });
+
+                    // Show target section
+                    targetSection.classList.remove('hidden');
+
+                    // Update Nav Links
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('href') === hash || (hash === '' && link.getAttribute('href') === '#home')) {
+                            link.classList.add('text-white', 'border-b-2', 'border-white');
+                            link.classList.remove('text-gray-400');
+                        } else {
+                            link.classList.remove('text-white', 'border-b-2', 'border-white');
+                            link.classList.add('text-gray-400');
+                        }
+                    });
+
+                    // Refresh AOS for new content visibility
+                    AOS.refresh();
+                    window.scrollTo(0, 0);
+                }
+            }
+
+            // Click listener for SPA links
+            document.body.addEventListener('click', (e) => {
+                const link = e.target.closest('a');
+                if (link && link.getAttribute('href') && link.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const hash = link.getAttribute('href');
+                    window.location.hash = hash;
+                    navigate(hash);
+                }
+            });
+
+            // Initial load handling
+            const initialHash = window.location.hash || '#home';
+            navigate(initialHash);
+            
+            // Listen for back/forward buttons
+            window.addEventListener('hashchange', () => {
+                navigate(window.location.hash);
+            });
+        });
+    </script>
+</body>
+</html>
