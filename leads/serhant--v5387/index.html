@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYAN SERHANT | Luxury Real Estate SPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #020617; /* Tailwind bg-gray-950 equivalent */
+            color: #FFFFFF;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #A3A3A8;
+            transition: width .3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .text-navy { color: #00154F; }
+        .bg-navy { background-color: #00154F; }
+        .border-navy { border-color: #00154F; }
+        .glow-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 0 rgba(0, 21, 79, 0);
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 20px rgba(0, 21, 79, 0.6);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden selection:bg-navy selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-gray-950/80 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-widest text-white uppercase">
+                RYAN <span class="text-gray-400">SERHANT</span>
+            </div>
+            <div class="hidden md:flex space-x-12 uppercase text-xs tracking-widest font-semibold">
+                <a href="#home" class="nav-link transition-colors duration-300">Home</a>
+                <a href="#about" class="nav-link transition-colors duration-300">The Vision</a>
+                <a href="#services" class="nav-link transition-colors duration-300">Expertise</a>
+                <a href="#contact" class="nav-link transition-colors duration-300">Contact</a>
+            </div>
+            <button class="md:hidden text-white">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- CONTENT WRAPPER -->
+    <main id="spa-content">
+
+        <!-- HOME SECTION -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://loremflickr.com/1920/1080/luxury,architecture,city?random=1" class="w-full h-full object-cover opacity-50 scale-105 animate-pulse" alt="Luxury Real Estate">
+                <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-gray-950/70 to-gray-950"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-6 text-center" data-aos="fade-up" data-aos-duration="1500">
+                <span class="inline-block px-4 py-1 mb-6 border border-white/20 text-xs tracking-[0.5em] uppercase text-gray-300">New York • Los Angeles • Global</span>
+                <h1 class="text-6xl md:text-9xl font-extrabold tracking-tighter mb-8 leading-none">
+                    LIMITLESS <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-400 to-gray-600 italic">EXCELLENCE</span>
+                </h1>
+                <p class="max-w-2xl mx-auto text-lg md:text-xl text-gray-300 mb-10 leading-relaxed font-light">
+                    The intersection of high-stakes luxury real estate and innovative media. Ryan Serhant is more than a name; it is the global standard for property brokerage and modern wealth creation. We don't just sell homes; we architect empires through the power of market dominance and relentless work ethic. Experience the future of real estate, where every transaction is a masterclass in strategic negotiation.
+                </p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <a href="#services" class="glow-button bg-white text-gray-950 px-10 py-5 rounded-none font-bold uppercase tracking-widest text-sm transition-all duration-300">
+                        Explore Portfolio
+                    </a>
+                    <a href="#about" class="border border-white/30 text-white px-10 py-5 rounded-none font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-gray-950 transition-all duration-300">
+                        Our Story
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+                <i class="fa-solid fa-chevron-down text-gray-500"></i>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="hidden min-h-screen bg-gray-950 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <span class="text-navy font-bold tracking-widest text-sm uppercase block mb-4 italic">The Powerhouse Brand</span>
+                        <h2 class="text-5xl font-bold mb-8 leading-tight">Leading the World's Most <span class="italic underline decoration-navy">Discerning</span> Markets.</h2>
+                        <div class="space-y-6 text-gray-300 leading-loose">
+                            <p>
+                                Ryan Serhant has successfully built a multi-billion dollar real estate empire by blending traditional brokerage excellence with a cutting-edge digital media engine. Our firm understands that in the modern era, visibility is currency and reputation is everything. We represent the most exclusive properties on the planet, ensuring each asset receives the cinematic storytelling it deserves. Our reach is not just local; it is a global web of high-net-worth individuals and institutional investors.
+                            </p>
+                            <p>
+                                Through years of market volatility, we have remained at the absolute pinnacle of the industry by obsessing over the details. Every client interaction is treated with the utmost discretion and precision, reflecting the high stakes of the luxury market. We believe that real estate is the greatest asset class in the world, and our mission is to unlock its potential for every client we serve. Our firm is built on the pillars of transparency, aggression, and unmatched market intelligence.
+                            </p>
+                            <p>
+                                Beyond the sale, Ryan Serhant is a pioneer in professional development and industrial education. We are shaping the next generation of agents through the "Sell It Like Serhant" ecosystem, which is now the number one sales training program globally. By sharing our proprietary blueprints, we elevate the entire industry while maintaining our position as its undisputed leader. Join us as we continue to push the boundaries of what is possible in the world of high-value brokerage.
+                            </p>
+                            <p>
+                                We are headquartered in the heart of Manhattan, but our influence stretches from the coastlines of Florida to the skyscrapers of Dubai. Our team of elite professionals is hand-picked for their ability to thrive under pressure and deliver results where others see obstacles. With Ryan Serhant at the helm, the vision is clear: dominate the market, lead the conversation, and never settle for anything less than extraordinary.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="fade-left">
+                        <div class="absolute -top-10 -left-10 w-64 h-64 bg-navy/20 rounded-full blur-3xl"></div>
+                        <img src="https://loremflickr.com/800/800/office,business?random=2" class="rounded-lg shadow-2xl relative z-10 grayscale hover:grayscale-0 transition-all duration-700" alt="Professional Leadership">
+                        <div class="absolute -bottom-6 -right-6 bg-navy p-8 z-20 hidden md:block">
+                            <p class="text-3xl font-bold leading-none">15+</p>
+                            <p class="text-xs uppercase tracking-widest opacity-80">Years of Dominance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="hidden min-h-screen bg-slate-900 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="text-center mb-20" data-aos="fade-up">
+                    <h2 class="text-5xl font-bold mb-4">Strategic Verticals</h2>
+                    <div class="w-24 h-1 bg-navy mx-auto mb-6"></div>
+                    <p class="text-gray-400 max-w-2xl mx-auto">Our holistic approach to real estate and brand building ensures that we offer comprehensive value across multiple high-impact sectors.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-navy/30 flex items-center justify-center rounded-xl mb-6 group-hover:bg-navy transition-colors duration-300">
+                            <i class="fa-solid fa-city text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 italic">Real Estate Brokerage</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Our brokerage represents the platinum standard in high-end residential and commercial asset transactions. We utilize proprietary data and cinematic marketing to expose your property to a global audience of qualified buyers. Every listing is treated as a premium brand launch, ensuring that we achieve record-breaking prices in record-breaking time. Trust your most valuable assets to the firm that defines the modern luxury market.
+                        </p>
+                        <ul class="text-sm text-gray-500 space-y-2 mb-8">
+                            <li><i class="fa-solid fa-check text-navy mr-2"></i> Global Network Exposure</li>
+                            <li><i class="fa-solid fa-check text-navy mr-2"></i> High-End Cinematic Tours</li>
+                            <li><i class="fa-solid fa-check text-navy mr-2"></i> Strategic Negotiation</li>
+                        </ul>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=3" class="w-full h-48 object-cover rounded-lg" alt="Brokerage">
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-navy/30 flex items-center justify-center rounded-xl mb-6 group-hover:bg-navy transition-colors duration-300">
+                            <i class="fa-solid fa-brain text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 italic">Thought Leadership</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Knowledge is the foundation of market dominance, and our thought leadership platform provides the blueprint for success. We offer exclusive insights into market trends, sales psychology, and brand integration that are unavailable anywhere else. By educating the next generation of sales professionals, we are elevating the entire standard of global real estate. Access our masterclasses and industry reports to stay two steps ahead of your competition.
+                        </p>
+                        <ul class="text-sm text-gray-500 space-y-2 mb-8">
+                            <li><i class="fa-solid fa-check text-navy mr-2"></i> Sales Training Ecosystem</li>
+                            <li><i class="fa-solid fa-check text-navy mr-2"></i> Quarterly Market Reports</li>
+                            <li><i class="fa-solid fa-check text-navy mr-2"></i> Personal Brand Consulting</li>
+                        </ul>
+                        <img src="https://loremflickr.com/600/400/tech,data?random=4" class="w-full h-48 object-cover rounded-lg" alt="Thought Leadership">
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-navy/30 flex items-center justify-center rounded-xl mb-6 group-hover:bg-navy transition-colors duration-300">
+                            <i class="fa-solid fa-microphone-lines text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 italic">Public Speaking</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Bring the unparalleled energy and strategic wisdom of Ryan Serhant to your next global event or corporate summit. Ryan's keynotes are masterfully designed to motivate teams, disrupt stagnant thinking, and inspire immediate action. From Fortune 500 boardrooms to massive industry arenas, he delivers high-impact narratives that drive measurable performance results. Book a session that transforms your audience's mindset and equips them with the tools to win.
+                        </p>
+                        <ul class="text-sm text-gray-500 space-y-2 mb-8">
+                            <li><i class="fa-solid fa-check text-navy mr-2"></i> Keynote Presentations</li>
+                            <li><i class="fa-solid fa-check text-navy mr-2"></i> Interactive Workshops</li>
+                            <li><i class="fa-solid fa-check text-navy mr-2"></i> Virtual Summit Hosting</li>
+                        </ul>
+                        <img src="https://loremflickr.com/600/400/stage,crowd?random=5" class="w-full h-48 object-cover rounded-lg" alt="Speaking">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="hidden min-h-screen bg-gray-950 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+                    <div data-aos="fade-right">
+                        <h2 class="text-6xl font-bold mb-8">Let's Build <br><span class="text-navy">The Future.</span></h2>
+                        <p class="text-gray-400 text-xl mb-12 font-light leading-relaxed">
+                            Whether you are looking to list a trophy penthouse, book a keynote for your next conference, or scale your own sales brand, our team is ready to execute your vision. We handle every inquiry with the highest level of urgency and professionalism. Reach out today to start a conversation that will change your trajectory forever. The world belongs to those who act; let's secure your legacy together.
+                        </p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-center space-x-6">
+                                <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-location-dot text-navy"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">Global Headquarters</p>
+                                    <p class="text-white font-semibold">SOHO, Manhattan, New York City</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-6">
+                                <div class="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center rounded-full">
+                                    <i class="fa-solid fa-envelope text-navy"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">Inquiries</p>
+                                    <p class="text-white font-semibold">concierge@ryanserhant.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-12 rounded-3xl" data-aos="fade-left">
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs uppercase tracking-widest text-gray-500 font-bold">First Name</label>
+                                    <input type="text" class="w-full bg-white/5 border border-white/10 px-4 py-4 rounded-lg focus:outline-none focus:border-navy transition-colors text-white" placeholder="John">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs uppercase tracking-widest text-gray-500 font-bold">Last Name</label>
+                                    <input type="text" class="w-full bg-white/5 border border-white/10 px-4 py-4 rounded-lg focus:outline-none focus:border-navy transition-colors text-white" placeholder="Doe">
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs uppercase tracking-widest text-gray-500 font-bold">Email Address</label>
+                                <input type="email" class="w-full bg-white/5 border border-white/10 px-4 py-4 rounded-lg focus:outline-none focus:border-navy transition-colors text-white" placeholder="john.doe@global.com">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs uppercase tracking-widest text-gray-500 font-bold">Interest Area</label>
+                                <select class="w-full bg-white/5 border border-white/10 px-4 py-4 rounded-lg focus:outline-none focus:border-navy transition-colors text-white">
+                                    <option class="bg-gray-900">Luxury Brokerage</option>
+                                    <option class="bg-gray-900">Thought Leadership</option>
+                                    <option class="bg-gray-900">Speaking Engagements</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs uppercase tracking-widest text-gray-500 font-bold">Your Ambition</label>
+                                <textarea rows="4" class="w-full bg-white/5 border border-white/10 px-4 py-4 rounded-lg focus:outline-none focus:border-navy transition-colors text-white" placeholder="How can we help you dominate your market?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-white text-gray-950 py-5 rounded-lg font-extrabold uppercase tracking-widest hover:bg-navy hover:text-white transition-all duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-xl font-extrabold tracking-widest uppercase">
+                RYAN <span class="text-gray-500">SERHANT</span>
+            </div>
+            <div class="flex space-x-8">
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-youtube text-xl"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+            </div>
+            <p class="text-gray-600 text-xs tracking-widest">
+                &copy; 2023 RYAN SERHANT. ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </footer>
+
+    <!-- SPA NAVIGATION SCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Animations
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+
+            // SPA Tab Switching Logic
+            const navLinks = document.querySelectorAll('nav a, #home a');
+            const sections = document.querySelectorAll('section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href').substring(1);
+                    
+                    if (targetId && document.getElementById(targetId)) {
+                        e.preventDefault();
+
+                        // Hide all sections
+                        sections.forEach(section => {
+                            section.classList.add('hidden');
+                        });
+
+                        // Show the target section
+                        const targetSection = document.getElementById(targetId);
+                        targetSection.classList.remove('hidden');
+
+                        // Scroll to top
+                        window.scrollTo(0, 0);
+
+                        // Update active state if needed (optional)
+                        // Trigger AOS again for newly visible content
+                        AOS.refresh();
+                        
+                        // Close mobile menu logic could go here if needed
+                    }
+                });
+            });
+
+            // Handle URL Hash on Load
+            const initialHash = window.location.hash.substring(1);
+            if (initialHash && document.getElementById(initialHash)) {
+                sections.forEach(section => section.classList.add('hidden'));
+                document.getElementById(initialHash).classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
