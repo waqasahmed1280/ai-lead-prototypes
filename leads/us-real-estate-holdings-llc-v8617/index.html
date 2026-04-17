@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendasta | Premium Digital Marketing SPA</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e73be',
+                        secondary: '#92c93d',
+                        darkBg: '#020617',
+                        cardBg: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background-color: rgba(2, 6, 23, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 1)), 
+                        url('https://loremflickr.com/1920/1080/luxury,architecture,city?random=1');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(30, 115, 190, 0.5);
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 30px rgba(146, 201, 61, 0.4);
+        }
+        section {
+            transition: opacity 0.4s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                    <i class="fas fa-bolt text-white text-xl"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tighter uppercase">Vendasta</span>
+            </div>
+            <div class="hidden md:flex space-x-10 text-sm font-semibold tracking-widest uppercase">
+                <a href="#home" class="nav-link hover:text-secondary transition-colors duration-300">Home</a>
+                <a href="#about" class="nav-link hover:text-secondary transition-colors duration-300">About</a>
+                <a href="#services" class="nav-link hover:text-secondary transition-colors duration-300">Services</a>
+                <a href="#contact" class="nav-link hover:text-secondary transition-colors duration-300">Contact</a>
+            </div>
+            <div>
+                <a href="#contact" class="nav-link px-6 py-2 bg-primary hover:bg-blue-700 rounded-full text-sm font-bold transition-all duration-300">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SPA Section Container -->
+    <main class="relative mt-0">
+        
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center hero-gradient">
+            <div class="max-w-7xl mx-auto px-4 py-24 text-center" data-aos="zoom-out" data-aos-duration="1500">
+                <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 text-glow">
+                    Digital Excellence <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Reimagined.</span>
+                </h1>
+                <p class="max-w-3xl mx-auto text-xl text-gray-300 mb-12 leading-relaxed">
+                    Vendasta delivers a powerhouse of white-label solutions tailored for the modern digital marketing landscape. 
+                    We empower agencies to scale effortlessly while providing local businesses with the high-end technology they deserve. 
+                    Our ecosystem is built for speed, accuracy, and undeniable market impact across every digital touchpoint. 
+                    Join the elite circle of professionals who are redefining the boundaries of growth and brand authority.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                    <a href="#services" class="nav-link px-10 py-4 bg-secondary text-gray-950 font-bold rounded-xl btn-glow transition-all duration-300 transform hover:scale-105">
+                        Explore Solutions
+                    </a>
+                    <a href="#about" class="nav-link px-10 py-4 border border-white/20 hover:bg-white/10 font-bold rounded-xl transition-all duration-300">
+                        Our Vision
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="hidden min-h-screen bg-slate-900 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-5xl font-extrabold mb-8 leading-tight">Mastering the Art of <br><span class="text-primary">Corporate Synergy.</span></h2>
+                        <div class="space-y-6 text-gray-300 text-lg leading-relaxed">
+                            <p>
+                                At Vendasta, we believe that digital marketing is more than just algorithms; it is a profound narrative between a brand and its audience. Our platform serves as the ultimate bridge, connecting complex marketing data with actionable business insights for thousands of partners globally. We have meticulously engineered a suite of tools that prioritize user experience and high-conversion metrics above all else.
+                            </p>
+                            <p>
+                                Since our inception, we have focused on the core mission of making local businesses succeed by providing them with the same technological advantages as global enterprises. We pride ourselves on a culture of constant innovation, where every update to our software is a step toward greater efficiency and profitability. Our team consists of industry veterans and visionary developers dedicated to your long-term dominance in the digital sphere.
+                            </p>
+                            <p>
+                                We operate at the intersection of creativity and data science, ensuring that every campaign is backed by empirical evidence and aesthetic excellence. By choosing Vendasta, you are not just selecting a service provider; you are choosing a partner committed to your legacy and growth. We are the silent engine behind the world's most successful marketing agencies, providing the fuel for a new era of digital commerce.
+                            </p>
+                        </div>
+                        <div class="mt-10 flex items-center space-x-8">
+                            <div>
+                                <h4 class="text-3xl font-bold text-secondary">50k+</h4>
+                                <p class="text-sm text-gray-400 uppercase tracking-widest">Active Partners</p>
+                            </div>
+                            <div class="w-px h-12 bg-white/10"></div>
+                            <div>
+                                <h4 class="text-3xl font-bold text-primary">1M+</h4>
+                                <p class="text-sm text-gray-400 uppercase tracking-widest">Lives Impacted</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="fade-left">
+                        <div class="absolute -top-10 -left-10 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
+                        <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+                        <img src="https://loremflickr.com/800/800/office,business?random=2" alt="Corporate Office" class="rounded-2xl shadow-2xl border border-white/10 relative z-10">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="hidden min-h-screen bg-gray-950 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="text-center mb-20" data-aos="fade-up">
+                    <h3 class="text-secondary font-bold tracking-[0.3em] uppercase mb-4">Core Ecosystem</h3>
+                    <h2 class="text-5xl font-extrabold mb-6">Strategic Digital Solutions</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">Discover the three pillars of digital marketing excellence that we provide to ensure your business stays ahead of the curve.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="glass-card p-10 rounded-3xl hover:-translate-y-4 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-500">
+                            <i class="fas fa-envelope-open-text text-primary text-3xl group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 capitalize">Email List Building</h3>
+                        <p class="text-gray-400 leading-relaxed mb-8">
+                            Maximize your audience outreach with our sophisticated email list building architectures designed for high-end conversion and engagement. We go beyond simple collection, utilizing lead magnets and behavioral triggers that ensure your subscribers are genuinely invested in your brand. Our systems integrate seamlessly with your existing CRM to provide a streamlined flow of communication that converts prospects into advocates. Every campaign we build is optimized for deliverability and impact, ensuring your message reaches the right inbox at the perfect time.
+                        </p>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=3" alt="Service Image" class="rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="glass-card p-10 rounded-3xl hover:-translate-y-4 hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-secondary transition-colors duration-500">
+                            <i class="fas fa-bullseye text-secondary text-3xl group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 capitalize">Lead Generation</h3>
+                        <p class="text-gray-400 leading-relaxed mb-8">
+                            Accelerate your growth with a data-driven lead generation engine that identifies and captures high-intent prospects across multiple digital channels. Our proprietary methodology focuses on quality over quantity, delivering leads that are pre-vetted and ready for immediate sales engagement. We utilize advanced AI-driven targeting and creative funnels that reduce your acquisition costs while significantly increasing your total pipeline value. Scalability is at the core of our lead generation strategies, allowing your business to expand predictably in any competitive market.
+                        </p>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=4" alt="Service Image" class="rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="glass-card p-10 rounded-3xl hover:-translate-y-4 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-500 transition-colors duration-500">
+                            <i class="fas fa-star-half-alt text-blue-500 text-3xl group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 capitalize">Customer Reviews</h3>
+                        <p class="text-gray-400 leading-relaxed mb-8">
+                            Control the narrative of your brand through our premium customer review management system that amplifies your online reputation. We provide the tools necessary to solicit positive feedback while managing and responding to customer concerns in a professional and timely manner. Social proof is the cornerstone of modern consumer trust, and our platform ensures your five-star experiences are showcased across the entire digital ecosystem. Turn your happy customers into your most powerful marketing asset by leveraging their voices to drive new acquisitions and brand loyalty.
+                        </p>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=5" alt="Service Image" class="rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="hidden min-h-screen bg-slate-900 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div data-aos="fade-right">
+                        <h2 class="text-5xl font-extrabold mb-8 leading-tight">Let's Define the <br><span class="text-secondary">Future Together.</span></h2>
+                        <p class="text-gray-300 text-lg mb-10 leading-relaxed">
+                            Ready to take your digital marketing agency or local business to the next level of profitability? 
+                            Our team of luxury consultants is standing by to provide a custom analysis of your current digital footprint. 
+                            We specialize in creating bespoke strategies that align with your specific growth goals and market conditions. 
+                            Fill out the form or reach out directly to begin your transformation with Vendasta today.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-white/10">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">Global Headquarters</h5>
+                                    <p class="text-gray-400">Saskatoon, SK, Canada | New York, NY, USA</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-white/10">
+                                    <i class="fas fa-phone text-secondary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">Contact Support</h5>
+                                    <p class="text-gray-400">+1 (800) 555-VENDASTA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-10 rounded-3xl" data-aos="flip-right">
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Full Name</label>
+                                    <input type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Email Address</label>
+                                    <input type="email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors" placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Select Service</label>
+                                <select class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors appearance-none">
+                                    <option class="bg-gray-950">Email List Building</option>
+                                    <option class="bg-gray-950">Lead Generation</option>
+                                    <option class="bg-gray-950">Customer Reviews</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Message</label>
+                                <textarea rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors" placeholder="How can we help your brand grow?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary py-4 rounded-xl font-bold uppercase tracking-widest hover:bg-blue-700 btn-glow transition-all duration-300 transform active:scale-95">
+                                Send Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-white/10 py-16">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-md flex items-center justify-center">
+                    <i class="fas fa-bolt text-white text-sm"></i>
+                </div>
+                <span class="text-xl font-extrabold tracking-tighter uppercase">Vendasta</span>
+            </div>
+            <div class="text-gray-500 text-sm">
+                &copy; 2023 Vendasta Technologies. All rights reserved. Designed for digital marketing excellence.
+            </div>
+            <div class="flex space-x-6 text-xl text-gray-400">
+                <a href="#" class="hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-primary transition-colors"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-primary transition-colors"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for SPA Logic -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('main section');
+
+            // Set up Click Listeners
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const href = link.getAttribute('href');
+                    
+                    // Only apply logic if it's an internal hash link
+                    if (href.startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = href.substring(1);
+                        
+                        // Update UI
+                        switchSection(targetId);
+                    }
+                });
+            });
+
+            function switchSection(id) {
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                sections.forEach(section => {
+                    // Hide all sections
+                    section.classList.add('hidden');
+                    section.style.opacity = '0';
+                    
+                    // Show target section
+                    if (section.id === id) {
+                        section.classList.remove('hidden');
+                        setTimeout(() => {
+                            section.style.opacity = '1';
+                        }, 50);
+                    }
+                });
+
+                // Re-trigger AOS for the newly visible section
+                AOS.refresh();
+            }
+
+            // Initial view
+            switchSection('home');
+        });
+    </script>
+</body>
+</html>
