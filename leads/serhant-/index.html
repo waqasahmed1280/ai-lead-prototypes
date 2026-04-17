@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google | Version 2.0 Enterprise Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d3f3f53846.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(66, 133, 244, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(234, 67, 53, 0.1), transparent);
+        }
+
+        .text-glow-blue { text-shadow: 0 0 20px rgba(66, 133, 244, 0.5); }
+        
+        .active-link {
+            color: #4285F4;
+            border-bottom: 2px solid #4285F4;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #4285F4, #3b82f6);
+            box-shadow: 0 4px 20px rgba(66, 133, 244, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(66, 133, 244, 0.6);
+        }
+
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-gray-950">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="flex gap-1">
+                        <div class="w-3 h-3 rounded-full bg-[#4285F4]"></div>
+                        <div class="w-3 h-3 rounded-full bg-[#EA4335]"></div>
+                        <div class="w-3 h-3 rounded-full bg-[#34A853]"></div>
+                    </div>
+                    <span class="text-2xl font-extrabold tracking-tighter ml-2">GOOGLE <span class="text-[#4285F4]">V2.0</span></span>
+                </div>
+                <div class="hidden md:flex space-x-10 items-center">
+                    <a href="#home" class="nav-link text-sm font-semibold hover:text-[#4285F4] transition-colors uppercase tracking-widest">Home</a>
+                    <a href="#about" class="nav-link text-sm font-semibold hover:text-[#4285F4] transition-colors uppercase tracking-widest">Innovation</a>
+                    <a href="#services" class="nav-link text-sm font-semibold hover:text-[#4285F4] transition-colors uppercase tracking-widest">Ecosystem</a>
+                    <a href="#contact" class="nav-link px-6 py-2 border border-white/20 rounded-full text-sm font-semibold hover:bg-white hover:text-black transition-all">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SPA Content Container -->
+    <main class="pt-20">
+        
+        <!-- HOME SECTION -->
+        <section id="home" class="min-h-screen flex items-center relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://loremflickr.com/1920/1080/luxury,architecture,city?random=1" alt="Hero Background" class="w-full h-full object-cover opacity-40">
+                <div class="absolute inset-0 bg-gradient-to-b from-gray-950/80 via-gray-950/90 to-gray-950"></div>
+            </div>
+            
+            <div class="max-w-7xl mx-auto px-4 py-24 relative z-10">
+                <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="inline-block px-4 py-1 rounded-full border border-[#4285F4]/30 bg-[#4285F4]/10 text-[#4285F4] text-xs font-bold tracking-widest uppercase mb-6">Leading the Digital Frontier</span>
+                    <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-8">
+                        Organizing the World's <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#34A853]">Future Information.</span>
+                    </h1>
+                    <p class="max-w-2xl mx-auto text-xl text-gray-400 mb-10 leading-relaxed">
+                        Welcome to the next generation of global information architecture, where speed meets precision. 
+                        Google 2.0 leverages the most advanced neural networks to provide answers before you even finish your thought. 
+                        Our infrastructure spans the entire planet, ensuring that no data point is ever out of reach for our users. 
+                        We are committed to a future where technology is invisible, yet indispensable to the human experience.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                        <button class="cta-button px-10 py-4 rounded-xl font-bold text-lg">Explore Intelligence</button>
+                        <button class="px-10 py-4 rounded-xl font-bold text-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-all">Watch the Keynote</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="hidden bg-slate-900">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-[#4285F4] font-bold tracking-widest uppercase text-sm mb-4">Our Legacy</h2>
+                        <h3 class="text-4xl md:text-5xl font-extrabold mb-8">A Century of Innovation in a Single Decade.</h3>
+                        <div class="space-y-6 text-gray-300 text-lg leading-relaxed">
+                            <p>
+                                At the heart of our mission lies a relentless pursuit of excellence and a passion for solving the world's most complex technical challenges. 
+                                We believe that information is a fundamental human right, and our systems are built to democratize access to knowledge for every person on earth. 
+                                From our humble beginnings in a garage to our current status as a global leader, we have never lost sight of our core values: innovation, integrity, and impact. 
+                                Our diverse team of world-class engineers and visionaries works around the clock to build the tools that will define the next century of human progress.
+                            </p>
+                            <p>
+                                We prioritize the security and privacy of our global users above all else, implementing state-of-the-art encryption across every node of our network.
+                                Our commitment to sustainability drives us to operate the world's cleanest hyperscale cloud, powered by 100% renewable energy sources.
+                                By investing billions in research and development, we ensure that Google stays at the bleeding edge of artificial intelligence and quantum computing.
+                                Join us as we bridge the gap between human curiosity and the vast digital landscape of the 21st century.
+                            </p>
+                        </div>
+                        <div class="mt-10 grid grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-3xl font-bold text-white">99.9%</h4>
+                                <p class="text-gray-500 text-sm">System Uptime</p>
+                            </div>
+                            <div>
+                                <h4 class="text-3xl font-bold text-white">2.5B+</h4>
+                                <p class="text-gray-500 text-sm">Active Nodes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="fade-left">
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-[#4285F4] to-[#34A853] opacity-20 blur-2xl rounded-full"></div>
+                        <img src="https://loremflickr.com/800/800/office,business?random=2" alt="Corporate Vision" class="rounded-3xl shadow-2xl relative z-10 border border-white/10">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="hidden bg-gray-950">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="text-center mb-20" data-aos="fade-up">
+                    <h2 class="text-[#EA4335] font-bold tracking-widest uppercase text-sm mb-4">The Ecosystem</h2>
+                    <h3 class="text-5xl font-extrabold mb-6">Our Core Solutions.</h3>
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        We provide a comprehensive suite of digital tools designed to empower creators, developers, and businesses across the globe. 
+                        Each service is integrated seamlessly into our unified neural core.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="glass-card group p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-[#4285F4]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-search text-3xl text-[#4285F4]"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Search Engine</h4>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Our search engine represents the pinnacle of human engineering and algorithmic efficiency in the modern digital landscape. 
+                            By processing petabytes of data in milliseconds, we provide you with the most relevant information across billions of indexed web pages. 
+                            We utilize deep learning models to understand intent, nuance, and context, moving beyond simple keyword matching. 
+                            Experience the most powerful discovery tool ever created, designed to connect people with the knowledge they need to change the world.
+                        </p>
+                        <img src="https://loremflickr.com/600/400/technology,data?random=3" alt="Search AI" class="w-full h-48 object-cover rounded-xl opacity-60 group-hover:opacity-100 transition-opacity">
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="glass-card group p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-[#EA4335]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-ad text-3xl text-[#EA4335]"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Advertising</h4>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Transform your business growth with our precision-targeted advertising suite that reaches audiences at the exact moment of intent. 
+                            Our machine learning algorithms analyze trillions of signals to place your brand in front of the consumers who matter most. 
+                            We provide transparent analytics and actionable insights that allow you to optimize your marketing spend for maximum return on investment. 
+                            Scale your impact from local markets to a global stage with the world's most sophisticated and ethical advertising infrastructure.
+                        </p>
+                        <img src="https://loremflickr.com/600/400/marketing,growth?random=4" alt="Advertising" class="w-full h-48 object-cover rounded-xl opacity-60 group-hover:opacity-100 transition-opacity">
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="glass-card group p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-[#34A853]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-briefcase text-3xl text-[#34A853]"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Business Solutions</h4>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Empower your enterprise with our robust suite of business solutions, ranging from cloud-native productivity tools to high-level analytics. 
+                            We offer secure, scalable, and collaborative environments that allow your teams to innovate faster and work more efficiently from anywhere. 
+                            Our ecosystem integrates artificial intelligence directly into your workflow, automating mundane tasks so your talent can focus on strategy. 
+                            From small startups to Fortune 500 companies, we provide the industrial-strength backbone required for the modern digital economy.
+                        </p>
+                        <img src="https://loremflickr.com/600/400/cloud,server?random=5" alt="Business Solutions" class="w-full h-48 object-cover rounded-xl opacity-60 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="hidden bg-slate-900">
+            <div class="max-w-7xl mx-auto px-4 py-24 text-center">
+                <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+                    <h2 class="text-5xl font-extrabold mb-8">Ready to define the next era?</h2>
+                    <p class="text-xl text-gray-400 mb-12">
+                        Our team of experts is ready to help you navigate the complexities of the digital frontier. 
+                        Whether you are looking to scale your infrastructure or reach new global audiences, we have the tools you need. 
+                        Connect with us today and discover how Google V2.0 can accelerate your vision into reality. 
+                        The future is waiting, and it's powered by the world's most advanced technology stack.
+                    </p>
+                    <form class="space-y-6 text-left bg-white/5 p-10 rounded-3xl border border-white/10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Full Name</label>
+                                <input type="text" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:border-[#4285F4] focus:outline-none transition-colors" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Email Address</label>
+                                <input type="email" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:border-[#4285F4] focus:outline-none transition-colors" placeholder="john@enterprise.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Message</label>
+                            <textarea rows="4" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 focus:border-[#4285F4] focus:outline-none transition-colors" placeholder="How can we help your business?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full cta-button py-4 rounded-xl font-bold text-lg uppercase tracking-widest">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 border-t border-white/5 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <span class="text-xl font-black">GOOGLE</span>
+                    <p class="text-gray-500 text-sm mt-2">&copy; 2024 Google Technology Corp. All rights reserved.</p>
+                </div>
+                <div class="flex gap-8">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true
+        });
+
+        // SPA Navigation Logic
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('main section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                
+                // Only handle hash anchors for SPA behavior
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    
+                    // Toggle visibility
+                    sections.forEach(section => {
+                        if (section.id === targetId) {
+                            section.classList.remove('hidden');
+                        } else {
+                            section.classList.add('hidden');
+                        }
+                    });
+
+                    // Update Active Link State
+                    navLinks.forEach(l => l.classList.remove('text-[#4285F4]'));
+                    link.classList.add('text-[#4285F4]');
+
+                    // Scroll to top of the section
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                    // Re-trigger AOS animations
+                    AOS.refresh();
+                }
+            });
+        });
+
+        // Handle initial state (Home visible, others hidden)
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.substring(1) || 'home';
+            sections.forEach(section => {
+                if (section.id === hash) {
+                    section.classList.remove('hidden');
+                } else {
+                    section.classList.add('hidden');
+                }
+            });
+            AOS.refresh();
+        });
+    </script>
+</body>
+</html>
