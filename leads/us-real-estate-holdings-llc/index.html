@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google V2.0 | The Future of Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#4285F4',
+                        brandRed: '#EA4335',
+                        brandGreen: '#34A853',
+                        brandDark: '#020617',
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(2,6,23,1)), url('https://loremflickr.com/1920/1080/luxury,architecture,city?random=1')",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #4285F4, #EA4335, #34A853);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #4285F4;
+            transition: width .3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .active-link::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white font-sans selection:bg-brandBlue selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-gray-950/80 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-brandBlue via-brandRed to-brandGreen animate-pulse"></div>
+                <span class="text-2xl font-bold tracking-tighter uppercase">Google</span>
+            </div>
+            <div class="hidden md:flex space-x-10 text-sm font-medium tracking-widest uppercase">
+                <a href="#home" class="nav-link transition-colors hover:text-brandBlue">Intelligence</a>
+                <a href="#about" class="nav-link transition-colors hover:text-brandBlue">Heritage</a>
+                <a href="#services" class="nav-link transition-colors hover:text-brandBlue">Solutions</a>
+                <a href="#contact" class="nav-link transition-colors hover:text-brandBlue">Connectivity</a>
+            </div>
+            <button class="bg-brandBlue hover:bg-blue-600 px-6 py-2 rounded-full text-xs font-bold transition-all transform hover:scale-105 shadow-lg shadow-blue-500/20">
+                GET STARTED
+            </button>
+        </div>
+    </nav>
+
+    <main id="spa-container">
+        
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center bg-hero-pattern bg-cover bg-center">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <span class="text-brandBlue font-bold tracking-[0.5em] uppercase text-sm mb-4 block">The Next Evolution of Tech</span>
+                    <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-tight">
+                        Organizing the <span class="text-gradient">Universe</span>
+                    </h1>
+                    <p class="max-w-2xl mx-auto text-gray-400 text-lg md:text-xl mb-10 leading-relaxed">
+                        Google represents the pinnacle of digital architecture and technological evolution. We don't just organize the world's information; we redefine how humanity interacts with the digital universe on a daily basis. Our mission is to provide instantaneous access to knowledge, empowering every individual to achieve their full potential through seamless connectivity. Join us as we build the next generation of intelligent systems that anticipate your needs before you even realize them.
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center gap-6">
+                        <a href="#services" class="bg-white text-black px-10 py-4 rounded-full font-bold hover:bg-gray-200 transition-all flex items-center justify-center">
+                            Explore Ecosystem <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#about" class="glass px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-all flex items-center justify-center">
+                            Our Philosophy
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="hidden min-h-screen pt-20">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h2 class="text-brandRed font-bold tracking-[0.3em] uppercase text-sm mb-4">Precision & Heritage</h2>
+                        <h3 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Driving Global Innovation Through Data.</h3>
+                        <div class="space-y-6 text-gray-300 text-lg leading-relaxed">
+                            <p>
+                                At Google, we believe that innovation is a continuous journey rather than a final destination. Our team of world-class engineers and visionary designers works tirelessly to bridge the gap between complex data and intuitive user experiences. By leveraging the latest breakthroughs in artificial intelligence and cloud computing, we provide the backbone for the modern internet infrastructure. We are committed to sustainability, diversity, and the relentless pursuit of excellence in every line of code we write.
+                            </p>
+                            <p>
+                                Our legacy is built on the foundation of radical transparency and uncompromising quality. We have transitioned from a simple algorithmic index to a multi-faceted technological powerhouse that powers global economies and facilitates international discourse. Every decision we make is guided by our commitment to the user, ensuring that our tools remain accessible, secure, and infinitely useful in an increasingly complex world.
+                            </p>
+                            <p>
+                                Looking forward, we are investing heavily in the future of quantum computing and sustainable energy. We recognize that the challenges of tomorrow require a fundamental rethink of how we process energy and information. Our research divisions are currently pioneering methods to make advanced computing more efficient while reducing our total environmental footprint to zero.
+                            </p>
+                            <p>
+                                Collaboration is at the heart of our corporate culture, fostering an environment where the world's brightest minds can solve the world's hardest problems. We provide a sanctuary for creative thinkers to experiment with bold ideas that have the potential to change the lives of billions. When you partner with us, you are not just using a tool; you are joining a global movement toward a smarter, more connected future.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="zoom-in" data-aos-duration="1200">
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-brandBlue/20 to-brandRed/20 blur-3xl rounded-full"></div>
+                        <img src="https://loremflickr.com/800/800/office,business?random=2" alt="Corporate Vision" class="relative rounded-2xl shadow-2xl border border-white/10 object-cover w-full h-[600px]">
+                        <div class="absolute bottom-8 -left-8 glass p-8 rounded-xl max-w-xs shadow-2xl">
+                            <p class="text-4xl font-bold text-brandBlue mb-1">99.9%</p>
+                            <p class="text-sm text-gray-400 uppercase tracking-widest">Uptime Performance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="hidden min-h-screen pt-20">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="text-center mb-20" data-aos="fade-down">
+                    <h2 class="text-brandGreen font-bold tracking-[0.3em] uppercase text-sm mb-4">Core Competencies</h2>
+                    <h3 class="text-5xl font-bold mb-6">Technological Excellence</h3>
+                    <p class="text-gray-400 max-w-2xl mx-auto">We provide a comprehensive suite of digital tools designed to optimize every aspect of the modern technological landscape, from information discovery to enterprise-grade growth.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="glass p-10 rounded-3xl hover:-translate-y-4 hover:shadow-2xl hover:shadow-brandBlue/20 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-brandBlue/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-search text-brandBlue text-2xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Search Engine</h4>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Our search engine serves as the world's most advanced gateway to information, processing billions of queries with lightning-fast precision. We utilize sophisticated algorithms and deep learning models to ensure that users find exactly what they are looking for within milliseconds. By prioritizing relevance and authority, we maintain a standard of quality that has become the global benchmark for digital discovery. Experience the power of information at your fingertips with our refined and intelligent search ecosystem.
+                        </p>
+                        <ul class="text-sm space-y-3 text-gray-500 mb-8">
+                            <li><i class="fas fa-check text-brandBlue mr-2"></i> Algorithmic Precision</li>
+                            <li><i class="fas fa-check text-brandBlue mr-2"></i> Real-time Indexing</li>
+                            <li><i class="fas fa-check text-brandBlue mr-2"></i> Semantic Intelligence</li>
+                        </ul>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=3" alt="Search" class="rounded-xl grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="glass p-10 rounded-3xl hover:-translate-y-4 hover:shadow-2xl hover:shadow-brandRed/20 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-brandRed/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-ad text-brandRed text-2xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Advertising</h4>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            We empower businesses of all sizes to reach their target audiences through data-driven advertising solutions that deliver measurable results. Our platforms utilize advanced predictive analytics to place your brand in front of the right people at the absolute perfect moment. By maximizing ROI through transparent reporting and granular targeting, we help you scale your operations with confidence and efficiency. Transform your marketing strategy into a precision-guided growth engine that thrives in a competitive digital landscape.
+                        </p>
+                        <ul class="text-sm space-y-3 text-gray-500 mb-8">
+                            <li><i class="fas fa-check text-brandRed mr-2"></i> Predictive Analytics</li>
+                            <li><i class="fas fa-check text-brandRed mr-2"></i> High-conversion Placement</li>
+                            <li><i class="fas fa-check text-brandRed mr-2"></i> Dynamic Scaling</li>
+                        </ul>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=4" alt="Advertising" class="rounded-xl grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="glass p-10 rounded-3xl hover:-translate-y-4 hover:shadow-2xl hover:shadow-brandGreen/20 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-brandGreen/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-briefcase text-brandGreen text-2xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Business Solutions</h4>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Our comprehensive suite of business solutions provides the infrastructure necessary for modern enterprises to scale, collaborate, and innovate globally. From cloud-based productivity tools to enterprise-level security protocols, we offer a robust ecosystem designed for the high-demand needs of today's corporations. We focus on streamlining workflows and enhancing communication to ensure that your team remains agile and productive regardless of their physical location. Empower your workforce with the tools used by the world's most successful organizations.
+                        </p>
+                        <ul class="text-sm space-y-3 text-gray-500 mb-8">
+                            <li><i class="fas fa-check text-brandGreen mr-2"></i> Enterprise Security</li>
+                            <li><i class="fas fa-check text-brandGreen mr-2"></i> Global Cloud Infrastructure</li>
+                            <li><i class="fas fa-check text-brandGreen mr-2"></i> Workflow Automation</li>
+                        </ul>
+                        <img src="https://loremflickr.com/600/400/skyscraper,modern?random=5" alt="Solutions" class="rounded-xl grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="hidden min-h-screen pt-20">
+            <div class="max-w-7xl mx-auto px-4 py-24">
+                <div class="glass rounded-[3rem] overflow-hidden grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-12 md:p-20 bg-brandBlue">
+                        <h3 class="text-5xl font-bold mb-8 text-white">Let's build the future together.</h3>
+                        <p class="text-blue-100 text-lg mb-12">
+                            Ready to take your digital presence to the next level? Our team of specialists is standing by to help you integrate the power of Google's ecosystem into your daily workflow. Whether you are a startup looking for exposure or an enterprise needing scale, we have the resources to ensure your success in the modern era.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <span>hello@google-v2.com</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <span>+1 (800) GOOGLE-V2</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <span>1600 Amphitheatre Parkway, CA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-12 md:p-20 bg-slate-900/50 backdrop-blur-xl">
+                        <form class="space-y-8">
+                            <div>
+                                <label class="block text-sm font-bold uppercase tracking-widest mb-4">Your Name</label>
+                                <input type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-brandBlue transition-colors" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold uppercase tracking-widest mb-4">Email Address</label>
+                                <input type="email" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-brandBlue transition-colors" placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold uppercase tracking-widest mb-4">Inquiry Type</label>
+                                <select class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-brandBlue transition-colors appearance-none">
+                                    <option class="bg-gray-900">Advertising Support</option>
+                                    <option class="bg-gray-900">Business Solutions</option>
+                                    <option class="bg-gray-900">Partnership Opportunity</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold uppercase tracking-widest mb-4">Message</label>
+                                <textarea class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-brandBlue transition-colors h-32" placeholder="How can we help you thrive?"></textarea>
+                            </div>
+                            <button class="w-full bg-white text-black font-bold py-5 rounded-xl hover:bg-brandBlue hover:text-white transition-all transform hover:-translate-y-1">
+                                SEND REQUEST
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-8">
+                        <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-brandBlue via-brandRed to-brandGreen"></div>
+                        <span class="text-2xl font-bold tracking-tighter uppercase">Google</span>
+                    </div>
+                    <p class="text-gray-500 max-w-sm leading-relaxed">
+                        Redefining the digital paradigm through relentless innovation and a commitment to organizing the world's information for the benefit of all mankind.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-sm text-white">Ecosystem</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-brandBlue transition-colors">Neural Networks</a></li>
+                        <li><a href="#" class="hover:text-brandBlue transition-colors">Quantum Compute</a></li>
+                        <li><a href="#" class="hover:text-brandBlue transition-colors">Data Privacy</a></li>
+                        <li><a href="#" class="hover:text-brandBlue transition-colors">Open Source</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-sm text-white">Connect</h5>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-brandBlue text-xl transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-brandRed text-xl transition-colors"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-brandGreen text-xl transition-colors"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 uppercase tracking-[0.2em]">
+                <p>&copy; 2024 Google V2.0. All Rights Reserved.</p>
+                <div class="flex space-x-8 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Architecture</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // AOS Initialization
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // SPA Navigation Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            function navigate(hash) {
+                const targetId = hash.replace('#', '') || 'home';
+                
+                sections.forEach(section => {
+                    if (section.id === targetId) {
+                        section.classList.remove('hidden');
+                        // Re-trigger AOS for new content
+                        AOS.refresh();
+                    } else {
+                        section.classList.add('hidden');
+                    }
+                });
+
+                // Update active link styles
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === hash) {
+                        link.classList.add('text-brandBlue', 'active-link');
+                    } else {
+                        link.classList.remove('text-brandBlue', 'active-link');
+                    }
+                });
+
+                // Scroll to top
+                window.scrollTo(0, 0);
+            }
+
+            // Handle Clicks
+            document.body.addEventListener('click', (e) => {
+                const link = e.target.closest('a');
+                if (link && link.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const hash = link.getAttribute('href');
+                    window.location.hash = hash;
+                    navigate(hash);
+                }
+            });
+
+            // Initial load
+            if (window.location.hash) {
+                navigate(window.location.hash);
+            } else {
+                navigate('#home');
+            }
+        });
+    </script>
+</body>
+</html>
